@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    text-rendering: geometricPrecision;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #333;
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    text-align: center;
+    overflow-y: scroll;
+}
+
+img {
+    height: 150px;
+
+}
+
+article {
+    text-align: center;
+}
+
+.Tit_Dino {
+    height: 120px;
+    width: 800px;
+}
+
+.Tit_wiki {
+    font-family: Roboto;
+    font-size: 60px;
+    font-size: bold;
+    text-shadow: 1px 4px 5px rgb(255, 255, 255);
+    letter-spacing: 4px;
+    margin: 0 0 2% 0;
+}
+
+.description_Container {
+    padding: 0 10% 0 10%;
+    letter-spacing: 2px;
+}
+
+.texto {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px 30px;
+    padding: 20px 30px;
+}
+
+.container .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 400px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0.35px 80px 0px 0px rgba(0, 0, 0, 0.15);
+    transition: 1s;
+}
+
+.container .card:hover {
+    zoom: 121%;
+    width: 400px;
+    height: 450px;
+    top: -20%;
+    scale: .90;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+    transition: 1.5s;
+}
+
+.card:hover .imgBx {
+    top: 160px;
+}
+
+.container .card .imgBx {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    background: #333;
+    background-color: rgb(194, 197, 200);
+
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.container .card .content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    padding: 0 30px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.imgBx {
+
+    object-fit: contain;
+}
+
+.container .card:hover .imgBx {
+    background-color: rgb(182, 197, 211);
+    transform: scale(1.35);
+    transition: 0.7s;
+
+}
